@@ -1,16 +1,25 @@
 {
-  "name": "express-hello-world",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Express Hello World on Render",
-  "main": "app.js",
-  "repository": "https://github.com/render-examples/express-hello-world",
-  "author": "Render Developers",
-  "license": "MIT",
-  "private": false,
+  "description": "A Node app for secure user registration and login with Two Factor Authentication.",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
+  "author": "Yogesh Kadam",
+  "license": "MIT",
   "dependencies": {
-    "express": "^5.0.0"
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
